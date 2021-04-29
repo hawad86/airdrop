@@ -1,0 +1,22 @@
+[
+    {
+        "text":"输入或者选择节点",
+        "nodeurl": "",
+        "token":""
+    },
+    {
+        "text": "HECO",
+        "nodeurl": "https://http-mainnet.hecochain.com",
+        "token": "0xd10852df03ea8b8af0cc0b09cac3f7dbb15e0433"
+    },
+    {
+        "text": "BSC",
+        "nodeurl": "https://bsc-dataseed.binance.org",
+        "token": "0x0747cda49c82d3fc6b06df1822e1de0c16673e9f"
+    },
+    {
+        "text":"OK Chain",
+        "nodeurl": "",
+        "token":""
+    }
+]
