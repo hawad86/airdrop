@@ -22,14 +22,14 @@
             <b-file
                 @input="upload"
                 plain
-                :disabled="selected == null || !prikey"
+                :disabled="busy || selected == null || !prikey"
             />
             <div v-if="transList.length">
             <span>空投地址数: {{ txCount }}</span>
             <br/>
             <span>空投币总数: {{ totalCoin }}</span>
             <br/>
-            <b-button  @click="airDrop"
+            <b-button  @click="airDrop" :disabled="busy"
                 >执行空投</b-button
             >
             </div>
