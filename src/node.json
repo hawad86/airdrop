@@ -16,7 +16,7 @@
     },
     {
         "text":"OK Chain",
-        "nodeurl": "",
-        "token":""
+        "nodeurl": "https://exchainrpc.okex.org",
+        "token":"0xd0c6821aba4fcc65e8f1542589e64bae9de11228"
     }
 ]
