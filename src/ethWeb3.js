@@ -51,6 +51,9 @@ class EthWeb3 {
         this.web3.eth.accounts.wallet.add(acc);
         this.address = acc.address;
     }
+    getGasPrice() {
+        return this.web3.eth.getGasPrice();
+    }
 }
 
 

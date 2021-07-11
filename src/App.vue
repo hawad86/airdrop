@@ -66,6 +66,7 @@ import Vue from "vue";
 export default {
     name: "App",
     data() {
+        window.app = this;
         return {
             // Note `isActive` is left out and will not appear in the rendered table
             fields: ["no", "address", "amount", "nonce", "txhash"],
@@ -112,6 +113,12 @@ export default {
             );
             this.txCount = 0;
             this.totalCoin = 0;
+            this.gasPrice = await this.eweb3.getGasPrice();
+            if(this.gasPrice > 10e9) {
+                const err = `gasPrice is too high ${this.gasPrice}`;
+                alert(err)
+                throw err;
+            }
             //let nonce = await web3.eth.getTransactionCount(eweb3.address);
             //transList.forEach(sheet => sheet);
             //const transfer = IERC20.methods.transfer(eweb3.address, 1);
