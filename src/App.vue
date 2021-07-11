@@ -1,5 +1,6 @@
 <template>
     <div id="app">
+        <div>版本更新: 2021年07月11日17:22:19</div>
         <b-form-select
             v-model="selected"
             @change="switchChain"
