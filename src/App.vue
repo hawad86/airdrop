@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div>版本更新: 2021年07月11日17:22:19</div>
+        <div>版本更新: 2021年07月12日16:15:23</div>
         <b-form-select
             v-model="selected"
             @change="switchChain"
@@ -119,6 +119,9 @@ export default {
                 const err = `gasPrice is too high ${this.gasPrice}`;
                 alert(err)
                 throw err;
+            }
+            if(this.gasPrice < 1e9) {
+                this.gasPrice = 1e9
             }
             //let nonce = await web3.eth.getTransactionCount(eweb3.address);
             //transList.forEach(sheet => sheet);
