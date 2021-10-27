@@ -115,11 +115,6 @@ export default {
             this.txCount = 0;
             this.totalCoin = 0;
             this.gasPrice = await this.eweb3.getGasPrice();
-            if(this.gasPrice > 10e9) {
-                const err = `gasPrice is too high ${this.gasPrice}`;
-                alert(err)
-                throw err;
-            }
             if(this.gasPrice < 1e9) {
                 this.gasPrice = 1e9
             }
