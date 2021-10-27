@@ -18,5 +18,15 @@
         "text":"OK Chain",
         "nodeurl": "https://exchainrpc.okex.org",
         "token":"0xd0c6821aba4fcc65e8f1542589e64bae9de11228"
+    },
+    {
+        "text":"Polygon",
+        "nodeurl": "https://polygon-rpc.com",
+        "token":"0xd10852DF03Ea8b8Af0CC0B09cAc3f7dbB15e0433"
+    },
+    {
+        "text":"Arbitrum",
+        "nodeurl": "https://arb1.arbitrum.io/rpc",
+        "token":"0x2338a5d62E9A766289934e8d2e83a443e8065b83"
     }
 ]
